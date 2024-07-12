@@ -8,5 +8,10 @@ Retrieves the weather at the specified coordinates via the Open Meteo API and sy
 - Adjust transition speed of weather
 
 # Installation
-1. Create the folder 'realworld-weather' in the Rebar Framework directory under plugins
-2. Download the folder `server` from repository and copy it into the folder `realworld-weather`
+
+From the main directory of your `Rebar` framework.
+
+```sh
+git clone https://github.com/KoronGIT/realworld-weather.git src/plugins/realworld-weather
+```
+
