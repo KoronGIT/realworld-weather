@@ -22,8 +22,7 @@ const getRealWeather = async function() {
 	const responses = await fetchWeatherApi(url, params);
 	
 	const response = responses[0];
-	
-	const utcOffsetSeconds = response.utcOffsetSeconds();	
+
 	const current = response.current()!;
 	
 	weatherData = {
@@ -48,9 +47,7 @@ const realWeatherToIngame = function(weather: number): Weathers {
 	    case (weather === 4 || (weather >=30 && weather <=35)):
 			return 'SMOG'
 		case (weather === 39):
-			return 'BLIZZARD'	
-		case (weather === 39):
-			return 'BLIZZARD'	
+			return 'BLIZZARD'		
 		case (weather >=45 && weather <=49):
 			return 'FOGGY'
 		case ((weather >=50 && weather <=69) || (weather >=80 && weather <=90)):
